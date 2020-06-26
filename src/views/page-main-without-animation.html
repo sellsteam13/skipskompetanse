@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- v1.0.0 --g -->
+<html lang="ru">
+
+@@include("../blocks/modules/header/head.html")
+
+<body>
+
+    <!-- begin of page -->
+
+
+    <!-- begin of menu -->
+    @@include("../blocks/modules/menu/menu.html")
+    <!-- end of menu -->
+
+    <div class="wrapper page-header-fixed">
+
+        <!-- begin of header -->
+        @@include("../blocks/modules/header/header.html")
+        <!-- end of header -->
+
+
+        <!-- begin of main -->
+        <main class="main">
+
+            <!-- welcome section -->
+            @@include("../blocks/modules/welcome/welcome.html")
+
+            <!-- blockquote-block section -->
+            @@include("../blocks/modules/blockquote-block/blockquote-block.html")
+
+            <!-- advantages section -->
+            @@include("../blocks/modules/advantages/advantages.html")
+
+            <!-- projects section -->
+            @@include("../blocks/modules/projects/projects.html")
+
+            <!-- history section -->
+            @@include("../blocks/modules/history/history.html")
+
+            <!-- video-block section -->
+            @@include("../blocks/modules/video-block/video-block.html")
+
+            <!-- news section -->
+            @@include("../blocks/modules/news/news.html")
+
+        </main>
+        <!-- end of main -->
+
+        <!-- begin of footer -->
+        @@include("../blocks/modules/footer/footer.html")
+        <!-- end of footer -->
+
+    </div>
+
+    <!-- modals -->
+    <div class="overlay">
+        @@include("../blocks/modules/modals/modals.html")
+    </div>
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

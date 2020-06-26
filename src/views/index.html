@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- v1.0.0 --g -->
+<html lang="ru">
+
+@@include("../blocks/modules/header/head.html")
+
+<body>
+
+    <!-- begin of page -->
+
+    <!-- begin of menu -->
+    @@include("../blocks/modules/menu/menu.html")
+    <!-- end of menu -->
+
+    <div class="wrapper">
+
+        <!-- begin of header -->
+        @@include("../blocks/modules/header/header.html")
+        <!-- end of header -->
+
+        <style>
+            .pages-list {
+                padding: 10vh 0 40vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .pages-list a {
+                font-size: 20px;
+                margin-bottom: 25px;
+                font-weight: 500;
+                font-style: italic;
+                transition: .3s;
+                white-space: nowrap;
+            }
+            
+            .pages-list h1 {
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 50px;
+            }
+            
+            .pages-list a:hover {
+                letter-spacing: .05em;
+                transition: .3s;
+            }
+        </style>
+
+        <!-- begin of main -->
+        <main class="main">
+            <div class="pages-list limiter">
+                <h1>Список страниц:</h1>
+                <a href="./page-main.html">1. Главная</a>
+                <a href="./page-main-without-animation.html">1.1 Главная без анимации</a>
+                <a href="./page-projects.html">2. Проекты</a>
+                <a href="./page-products-category.html">3. Проекты  (выбранная категория)</a>
+                <a href="./page-tours.html">4. 3D тур</a>
+                <a href="./404.html">5. 404</a>
+                <a href="./page-product.html">6. Проект  (отдельный корабль)</a>
+                <a href="./page-contacts.html">7. Контакты</a>
+                <a href="./page-news.html">8. Новости</a>
+                <a href="./page-services.html">9. Услуги</a>
+                <a href="./page-about.html">10. О компании</a>
+                <a href="./page-single-news.html">11. Новости (отдельная новость)</a>
+                <a href="./page-career.html">12. Карьера</a>
+            </div>
+        </main>
+        <!-- end of main -->
+
+        <!-- begin of footer -->
+        @@include("../blocks/modules/footer/footer.html")
+        <!-- end of footer -->
+
+    </div>
+
+    <!-- modals -->
+    <div class="overlay">
+        @@include("../blocks/modules/modals/modals.html")
+    </div>
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1279px) {
+        flex-wrap: wrap;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: 2.14;
+        color: rgba(255, 255, 255, 0.5);
+        margin-right: 17px;
+        transition: color $trans;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.current {
+            color: var(--white);
+            pointer-events: none;
+        }
+        &:hover {
+            color: var(--white);
+            transition: color $trans;
+        }
+        @media (max-width: 1279px) {
+            margin-right: 11px;
+            font-size: rem(12);
+        }
+    }
+}

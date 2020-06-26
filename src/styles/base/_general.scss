@@ -1,0 +1,195 @@
+/** normalize basic styles **/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+    border: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/** default styles **/
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+body {
+    min-width: 320px;
+    // overflow-x: hidden;
+    background: #1B3051;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body * {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input[type="text"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    text-align: left;
+    &:focus {
+        outline: none;
+    }
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+    transition: .4s ease-in-out;
+    .header {
+        margin-bottom: 14px;
+    }
+    main {
+        flex-grow: 1;
+    }
+}
+
+.limiter {
+    // max-width: 1760px;
+    width: calc(100% - 160px);
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1279px) {
+        width: calc(100% - 80px);
+    }
+    @media (max-width: 650px) {
+        width: calc(100% - 40px);
+    }
+}
+
+.limiter--big {
+    // max-width: 1600px;
+    width: calc(100% - 320px);
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1650px) {
+        width: calc(100% - 160px);
+    }
+    @media (max-width: 1279px) {
+        width: calc(100% - 80px);
+    }
+    @media (max-width: 650px) {
+        width: calc(100% - 40px);
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}

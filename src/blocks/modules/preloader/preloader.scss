@@ -1,0 +1,36 @@
+/** styles for preloader module **/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    * {
+        pointer-events: none;
+    }
+    &-logo {
+        position: relative;
+        z-index: 2;
+        .icon {
+            width: 16.25vw;
+            min-width: 312px;
+            height: 5.9375vw;
+            min-height: 114px;
+        }
+    }
+    &-square-blue {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        background-color: #1B3051;
+    }
+}

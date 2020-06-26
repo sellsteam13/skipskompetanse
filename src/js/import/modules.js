@@ -1,0 +1,9 @@
+import "%modules%/header/header";
+import "%modules%/menu/menu";
+import "%modules%/projects/projects";
+import "%modules%/history/history";
+import "%modules%/product/product";
+import "%modules%/about/about";
+import "%modules%/animation/animation";
+import "%modules%/modals/modals";
+import "%modules%/components/components";

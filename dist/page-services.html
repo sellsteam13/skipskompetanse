@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- v1.0.0 --g -->
+<html lang="ru">
+
+<head>
+
+    <!-- basic page settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>skipsko Вёрстка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- connecting favicons -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <!-- connecting font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- connecting styles -->
+    <link rel="stylesheet" href="styles/main.min.css">
+
+</head>
+
+<body>
+
+    <!-- begin of page -->
+
+    <!-- begin of menu -->
+    <div class="menu">
+    <div class="header-choices menu-lang">
+        <button class="header-choices__trigger">
+            <span>RU</span>
+            <svg class="icon icon-chevron">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+            </svg>
+        </button>
+        <div class="header-choices-popup">
+            <a href="#" class="header-choices-popup__option">Norway</a>
+            <a href="#" class="header-choices-popup__option">English</a>
+        </div>
+    </div>
+    <nav class="menu-nav">
+        <div class="menu-nav__titling">Меню</div>
+        <div class="menu-nav-links">
+            <a href="#" class="menu-nav-links__item">Услуги</a>
+            <a href="#" class="menu-nav-links__item">О нас</a>
+            <a href="#" class="menu-nav-links__item">Новости</a>
+            <a href="#" class="menu-nav-links__item">Карьера</a>
+            <a href="#" class="menu-nav-links__item">Контакты</a>
+        </div>
+    </nav>
+    <nav class="menu-nav">
+        <div class="menu-nav__titling">Проекты</div>
+        <div class="menu-nav-links">
+            <a href="#" class="menu-nav-links__item">Носители живой рыбы</a>
+            <a href="#" class="menu-nav-links__item">Рыболовные судна</a>
+            <a href="#" class="menu-nav-links__item">Рабочие лодки</a>
+            <a href="#" class="menu-nav-links__item">Остальное</a>
+        </div>
+    </nav>
+    <div class="menu-contacts">
+        <a href="tel:+4757001440" class="menu-contacts__tel">+47 57 00 14 40</a>
+        <a href="mailto:post@skipskompetanse.no" class="menu-contacts__mail">post@skipskompetanse.no</a>
+        <div class="menu-contacts-socials">
+            <a href="#" class="menu-contacts-socials__item">
+                <svg class="icon icon-linkedin">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a href="#" class="menu-contacts-socials__item">
+                <svg class="icon icon-instagram">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="menu-contacts-socials__item">
+                <svg class="icon icon-facebook">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+    <!-- end of menu -->
+
+    <div class="wrapper">
+
+        <!-- begin of header -->
+        <header class="header">
+    <div class="header-wrap limiter">
+        <button class="header__burger menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header-choices header-projects">
+            <button class="header-choices__trigger">
+                <span>проекты</span>
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button>
+            <div class="header-choices-popup">
+                <a href="#" class="header-choices-popup__option">Рыболовные суда и краболовы</a>
+                <a href="#" class="header-choices-popup__option">Транспортировка живой рыбы</a>
+                <a href="#" class="header-choices-popup__option">Рабочие и специальные суда</a>
+                <a href="#" class="header-choices-popup__option">в разработке</a>
+            </div>
+        </div>
+        <a href="#" class="header__logo">
+            <svg class="icon icon-logo">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <div class="header-choices header-language">
+            <button class="header-choices__trigger">
+                <span>RU</span>
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button>
+            <div class="header-choices-popup">
+                <a href="#" class="header-choices-popup__option">English</a>
+                <a href="#" class="header-choices-popup__option">Norway</a>
+            </div>
+        </div>
+        <a href="tel:+1234567890" class="header__contact">связаться с нами</a>
+    </div>
+</header>
+        <!-- end of header -->
+
+        <!-- begin of main -->
+        <main class="main">
+
+            <!-- services module -->
+            <section class="services">
+    <div class="services-wrap limiter--big">
+        <div class="def-title">
+            <h1>Услуги</h1>
+        </div>
+        <div class="def-breadcrumbs">
+            <div class="breadcrumbs">
+    <a href="#" class="breadcrumbs__link">Главная</a>
+    <a href="#" class="breadcrumbs__link current">Проекты</a>
+</div>
+        </div>
+        <div class="services-descr">
+            <h3 class="services-descr__subtitle">
+                Мы стараемся выходить за рамки существующих проблем и решений и предлагаем новые подходы, чтобы помочь нашим клиентам в авангарде инноваций.
+            </h3>
+            <div class="services-descr__list">
+                <h4>Услуги, которые мы обычно предоставляем, включают в себя:</h4>
+                <ul>
+                    <li>Проектирование и проектирование судов</li>
+                    <li>Расчеты, чертежи и документация</li>
+                    <li>Управление проектом и надзор</li>
+                    <li>Помощь в тендере, ведении переговоров и заключении контрактов</li>
+                    <li>3D дизайн исследования и визуализация</li>
+                </ul>
+            </div>
+            <div class="services-descr__pulsing plus-container">
+                <div class="plus"></div>
+            </div>
+            <h4 class="services-descr__text">
+                Нашими клиентами, как правило, являются судовладельцы, поставщики судового оборудования и верфи, а также консультанты.
+            </h4>
+        </div>
+        <div class="services-list">
+            <article class="services__item">
+                <div class="services__item-text">
+                    <h3 data-aos="fade-up">Дизайн корабля</h3>
+                    <h4 data-aos="fade-up">Дизайн - это создание и формирование функциональности и, конечно же, результат этого процесса.</h4>
+                    <h5 data-aos="fade-up">Услуги, которые мы обычно предоставляем, включают в себя:</h5>
+                    <ul>
+                        <li data-aos="fade-up">CFD анализ</li>
+                        <li data-aos="fade-up">Модельные испытания</li>
+                        <li data-aos="fade-up">Расширенный гидравлический анализ</li>
+                    </ul>
+                    <p data-aos="fade-up">Мы считаем, что хороший дизайн должен хорошо выглядеть без ущерба для качества и функций продукта. Дизайн должен способствовать увеличению стоимости продукта и его способности приносить доход.</p>
+                </div>
+                <div class="services__item-illstr" data-aos="fade-up">
+                    <div class="services__item-illstr-wrap">
+                        <div class="services__item-photo">
+                            <img src="./img/pics/product/product-example.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="call-btn">
+                        <svg class="icon icon-phone">
+                            <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>связаться</span>
+                    </a>
+                </div>
+                <div class="services__item-decorator ltr">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+                <div class="services__item-decorator rtl">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+            </article>
+            <article class="services__item">
+                <div class="services__item-text">
+                    <h3 data-aos="fade-up">Дизайн корабля</h3>
+                    <h4 data-aos="fade-up">Дизайн - это создание и формирование функциональности и, конечно же, результат этого процесса.</h4>
+                    <p data-aos="fade-up">Мы считаем, что хороший дизайн должен хорошо выглядеть без ущерба для качества и функций продукта. Дизайн должен способствовать увеличению стоимости продукта и его способности приносить доход.</p>
+                    <p data-aos="fade-up">Мы считаем, что хороший дизайн должен хорошо выглядеть без ущерба для качества и функций продукта. Дизайн должен способствовать увеличению стоимости продукта и его способности приносить доход.</p>
+                    <p data-aos="fade-up">Мы считаем, что хороший дизайн должен хорошо выглядеть без ущерба для качества и функций продукта. Дизайн должен способствовать увеличению стоимости продукта и его способности приносить доход.</p>
+                </div>
+                <div class="services__item-illstr" data-aos="fade-up">
+                    <div class="services__item-illstr-wrap">
+                        <div class="services__item-photo">
+                            <img src="./img/pics/product/product-example.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="call-btn">
+                        <svg class="icon icon-phone">
+                            <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>связаться</span>
+                    </a>
+                </div>
+                <div class="services__item-decorator ltr">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+                <div class="services__item-decorator rtl">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+            </article>
+            <article class="services__item">
+                <div class="services__item-text">
+                    <h3 data-aos="fade-up">Дизайн корабля</h3>
+                    <h4 data-aos="fade-up">Дизайн - это создание и формирование функциональности и, конечно же, результат этого процесса.</h4>
+                    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facere laboriosam, maiores ad officia iure in reiciendis quidem excepturi veritatis!</p>
+                    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facere laboriosam, maiores ad officia iure!</p>
+                </div>
+                <div class="services__item-illstr" data-aos="fade-up">
+                    <div class="services__item-illstr-wrap">
+                        <div class="services__item-photo">
+                            <img src="./img/pics/product/product-example.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="call-btn">
+                        <svg class="icon icon-phone">
+                            <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>связаться</span>
+                    </a>
+                </div>
+                <div class="services__item-decorator ltr">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+                <div class="services__item-decorator rtl">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <!-- end of main -->
+
+        <!-- begin of footer -->
+        <footer class="footer">
+    <div class="footer-wrap limiter">
+        <div class="footer-info">
+            <div class="footer-info__mailing">
+                <label for="mailingInput">Подписка на рассылку</label>
+                <form class="footer-info__mailing-input">
+                    <input type="text" id="mailingInput" placeholder="E-mail">
+                    <button type="submit">
+                        <svg class="icon icon-arrow-long">
+                            <use xlink:href="./img/sprites/main-sprite.svg#icon-arrow-long"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="footer-info__partners">
+                <img src="./img/default/footer/partners.svg" alt="partners" title="Our partners">
+            </div>
+            <a href="#" class="footer-info__norway">
+                <span>Переход на сайт Skipskompetanse AS</span>
+                <svg class="icon icon-earth">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-earth"></use>
+                </svg>
+            </a>
+            <div class="footer-info__copyrights">© Skipskompetanse RUS</div>
+        </div>
+        <nav class="footer-nav">
+            <div class="footer-nav__block">
+                <div class="footer-nav__block-title">Меню</div>
+                <a href="#" class="footer-nav__block-link">Услуги</a>
+                <a href="#" class="footer-nav__block-link">О нас</a>
+                <a href="#" class="footer-nav__block-link">Новости</a>
+                <a href="#" class="footer-nav__block-link">Карьера</a>
+                <a href="#" class="footer-nav__block-link">Контакты</a>
+            </div>
+            <div class="footer-nav__block">
+                <div class="footer-nav__block-title">Проекты</div>
+                <a href="#" class="footer-nav__block-link">Рыболовные суда и краболовы</a>
+                <a href="#" class="footer-nav__block-link">Транспортировка живой рыбы</a>
+                <a href="#" class="footer-nav__block-link">Рабочие и специальные суда</a>
+                <a href="#" class="footer-nav__block-link">В разработке</a>
+            </div>
+        </nav>
+        <div class="footer-contacts">
+            <a href="#" class="footer-contacts__logo">
+                <svg class="icon icon-logo">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="footer-contacts__office">
+                <div class="footer-contacts__office-title">Офис:</div>
+                <div class="footer-contacts__office-address">ООО «Скипскомпетанс РУС» <br> 196158, Россия, Санкт-Петербург <br> Пулковское шоссе 40 корп. 4 литер Д пом. 1-Н, ком. 249БЦ “Технополис”</div>
+            </div>
+            <a href="tel:+79219477557" class="footer-contacts__tel">+7 921 947 75 57</a>
+            <a href="mailto:post@skipskompetanse.ru" class="footer-contacts__mail">post@skipskompetanse.ru</a>
+            <div class="footer-contacts-socials">
+                <a href="#" class="footer-contacts-socials__link">
+                    <svg class="icon icon-linkedin">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-contacts-socials__link">
+                    <svg class="icon icon-instagram">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-contacts-socials__link">
+                    <svg class="icon icon-facebook">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer-contacts__studio">By BWS</a>
+        </div>
+    </div>
+</footer>
+        <!-- end of footer -->
+
+    </div>
+
+    <!-- modals -->
+    <div class="overlay">
+        <div class="modal modal-video1">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hvkj21CNwFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button class="modal-close">
+        <span></span><span></span>
+    </button>
+</div>
+<div class="modal modal-video2">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PeuOMyz4Wgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button class="modal-close">
+        <span></span><span></span>
+    </button>
+</div>
+    </div>
+
+    <!-- connecting scripts -->
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+
+</body>
+
+</html>

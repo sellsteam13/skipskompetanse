@@ -1,0 +1,99 @@
+/** styles for blockquote block **/
+
+.blockquote-block {
+    padding: 110px 0 110px 640px;
+    position: relative;
+    z-index: 3;
+    background: var(--red) url('../img/backgrounds/blockquote-block/blockquote-block-ship-bg.png') no-repeat;
+    background-size: 1889px 615px;
+    background-position: -889px calc(100% + 31px);
+    @media (max-width: 1650px) {
+        background-size: 1372px 447px;
+        background-position: -695px -40px;
+        padding: 75px 115px 90px 360px;
+    }
+    @media (max-width: 1279px) {
+        padding: 60px 40px 75px 110px;
+        background-size: 980px 319px;
+        background-position: -528px -9px;
+    }
+    @media (max-width: 650px) {
+        padding: 90px 20px 75px;
+        background-position: -670px calc(100% + 20px);
+    }
+    &:before {
+        content: '“';
+        position: absolute;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 50px;
+        left: 318px;
+        top: 154px;
+        @media (max-width: 1650px) {
+            left: 220px;
+            top: 80px;
+            font-size: 72px;
+            line-height: .69;
+        }
+        @media (max-width: 1279px) {
+            left: 40px;
+            top: 66px;
+            font-size: 60px;
+        }
+        @media (max-width: 650px) {
+            left: 20px;
+            top: 56px;
+            font-size: 45px;
+        }
+    }
+    &__text {
+        max-width: 980px;
+        margin-bottom: 50px;
+        font-style: italic;
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: 2;
+        @media (max-width: 1650px) {
+            font-size: rem(18);
+            line-height: 2.22;
+        }
+        @media (max-width: 1279px) {
+            font-size: rem(16);
+            line-height: 1.75;
+            max-width: 100%;
+            margin-bottom: 24px;
+            br {
+                display: none;
+            }
+        }
+        @media (max-width: 650px) {
+            font-weight: 400;
+        }
+    }
+    &__link {
+        display: block;
+        font-weight: bold;
+        font-size: rem(12);
+        line-height: 2;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: letter-spacing $trans;
+        &:hover {
+            letter-spacing: .2em;
+            transition: letter-spacing $trans;
+        }
+    }
+    &__author {
+        span {
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: rem(14);
+            line-height: 1.71;
+            &:nth-child(1) {
+                font-weight: 600;
+                color: var(--white);
+            }
+        }
+    }
+}
